@@ -113,7 +113,7 @@ runs:
         $packageArg = if ($package -eq 'true') { "-package" } else { "" }
         $archiveArg = if ($archive -eq 'true') { "-archive -archivedirectory=`"$archivePath`"" } else { "" }
         $nullrhiArg = if ($nullrhi -eq 'true') { "-nullrhi" } else { "" }
-        $editorArg = if ($editor -eq 'true') { "-nocompileeditor" } else { "" }
+        $editorArg = if ($editor -eq 'true') { "" } else { "-nocompileeditor" }
         $encryptIniArg = if ($encryptIni -eq 'true') { "-encryptinifiles" } else { "" }
         $releaseArg = if ($release -ne 'false') { "-createreleaseversion=$release" } else { "" }
         $patchArg = if ($patch -ne 'false') { "-generatepatch -basedonreleaseversion=$patch" } else { "" }
