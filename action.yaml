@@ -110,7 +110,7 @@ runs:
         
         $cleanArg = if ($clean -eq 'true') { "-clean" } else { "" }
         $serverArg = if ($server -eq 'true') { "-server -serverplatform=$platform -noclient" } else { "" }
-        $cookArg = if ($cook -eq 'true') { "-cook" } else { "" }
+        $cookArg = if ($cook -eq 'true') { "-cook" } else { "-skipcook" }
         $stageArg = if ($stage -eq 'true') { "-stage" } else { "" }
         $pakArg = if ($pak -eq 'true') { "-pak" } else { "" }
         $packageArg = if ($package -eq 'true') { "-package" } else { "" }
